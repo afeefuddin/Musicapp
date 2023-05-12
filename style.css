@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+}
+.container{
+    margin: 0px;
+    background-color: rgba(33,28,63,255);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.side-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    
+}
+#profile-image{
+    height:120px;
+    width: 105px;
+    border-radius: 25px;
+
+}
