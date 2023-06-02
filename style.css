@@ -1,21 +1,195 @@
+html{
+    height: 100%;
+}
 body{
     margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+    color: #605d7b;
+}
+a:hover{
+    color: #fcfbfd;
 }
 .container{
     margin: 0px;
     background-color: rgba(33,28,63,255);
-    height: 100%;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.7fr 4fr;
+    height: 100vh;
 }
-.side-container{
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+.side-container{  
+      display: flex;    
+      flex-direction: column;
+
     
 }
+.profile{
+    padding: 10px;
+    padding-top: 35px;
+    padding-left: 20px;
+}
 #profile-image{
-    height:120px;
-    width: 105px;
+    height:100px;
+    width: 90px;
     border-radius: 25px;
 
+}
+.wish{
+    padding: 20px 0px 5px 0px;
+    color: #716c8a;
+    font-family: Roboto;
+}  
+.profile-name{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #fcfbfd;
+    padding-bottom: 20px;
+}
+.widgets{
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+}
+.heading{
+    color: #f6f6f8;
+    font-family: Roboto;
+    font-size: 12px;
+    padding-bottom: 1rem;
+}
+.features{
+    color: #605d7b;
+    font-family: Roboto;
+    font-size: 17px;
+    padding-right: 10px;
+    padding-bottom: 0.8em;
+}
+.features:hover{
+    color: #f6f6f8;
+}
+.playingAnimation{
+background-color: #342e50;
+margin-left: 25px;
+margin-right:15px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+display: flex;
+justify-content: space-between;
+padding: 5px;
+}
+.player{
+    background: linear-gradient(90deg,#b86ef4,#b05ef4);
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 15px;
+    padding: 12px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.songName{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #fff5ff;
+}
+.singerName{
+    font-size: 15px;
+    font-family: Roboto;
+    color: #d89cf9;
+
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+#play{
+    width: 20px;
+    height: 20px;
+    border-radius: 45px;
+}
+button{
+    border-radius: 35px;
+    height: 30px;
+    border: none;
+    width: 30px;
+}
+#prev{
+    background-color:#d89cf9;
+    width:20px;
+    height: auto;
+}
+.prevButton{
+    background-color:#d89cf9;
+
+}
+#next{
+    background-color:#d89cf9;
+    width:20px;
+    height: auto;
+}
+.nextButton{
+    background-color:#d89cf9;
+
+}
+.content-container{
+    background-color: #fff5ff;
+    margin: 20px;
+    border-radius: 20px;
+}
+.nav-bar{
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-family: Roboto;
+    display: flex;
+    justify-content: space-between;
+}
+.searchBar{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+input{
+    background: #fff5ff;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+  
+}
+.search{
+    height: 20px;
+    width: auto;
+    padding: 2px;
+    padding-right:11px;
+    padding-top: 11px;
+}
+.nest-searchBar{
+    display: flex;
+}
+.song-container{
+    display: inline-block;
+    margin: 30px;
+    margin-bottom: 0px;
+    background-color: #605d7b;
+    width: 50vw;
+    border-radius: 10px;
+}
+.songNameContainer{
+    display: flex;
+}
+.songImage{
+    padding: 5px;
+}
+.songContent{
+    display: flex;
+    justify-content: space-between;
+}
+.songDuration{
+    margin-right: 1vw;
+    margin-top: 1vh;
 }
