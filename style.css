@@ -22,7 +22,7 @@ a:hover{
     grid-template-columns: 0.7fr 4fr;
     height: 100vh;
 }
-.side-container{  
+#side-container{  
       display: flex;    
       flex-direction: column;
 
@@ -82,6 +82,9 @@ display: flex;
 justify-content: space-between;
 padding: 5px;
 }
+.songPlayer{
+    display: none;
+}
 .player{
     background: linear-gradient(90deg,#b86ef4,#b05ef4);
     margin-left: 20px;
@@ -92,9 +95,16 @@ padding: 5px;
     text-align: center;
 }
 .songName{
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-family: Roboto;
     color: #fff5ff;
+}
+.artistName{
+    font-size: 14px;
+    color: gainsboro;
+    /* text-align: center; */
 }
 .singerName{
     font-size: 15px;
@@ -185,6 +195,10 @@ input{
 .songImage{
     padding: 5px;
 }
+.songImage img{
+    height: 20px;
+    background: none;
+}
 .songContent{
     display: flex;
     justify-content: space-between;
@@ -192,4 +206,5 @@ input{
 .songDuration{
     margin-right: 1vw;
     margin-top: 1vh;
+    color: #d1c9f7;
 }

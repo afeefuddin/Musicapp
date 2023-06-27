@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="side-container">
+        <div id="side-container">
             <div class="profile">
                 <div class="pfp"> <img src="profile-image.jpg" alt="Afeef" id="profile-image"></div>
                 <div class="wish">Hi!</div>
@@ -22,138 +22,64 @@
             </div>
             <div class="widgets">
                 <div class="upperWidgets">
-                <div class="heading menu">Menu</div>
-                <div class="features" id="explore"><a href="#">Explore</a></div>
-                <div class="features" id="generes"><a>Generes</a></div>
-                <div class="features" id="albums"><a>Albums</a></div>
-                <div class="features" id="artists"><a>Artists</a></div>
-            </div>
-            <div class="lowerWidgets">
-                <div class="heading Library">Library </div>
-                <div class="features" id="favourites"><a href="#">Favourites</a></div>
-                <div class="features" id="popular"><a href="#">Popular</a></div>
+                    <div class="heading menu">Menu</div>
+                    <div class="features" id="explore"><a href="#">Explore</a></div>
+                    <div class="features" id="generes"><a>Generes</a></div>
+                    <div class="features" id="albums"><a>Albums</a></div>
+                    <div class="features" id="artists"><a>Artists</a></div>
+                </div>
+                <div class="lowerWidgets">
+                    <div class="heading Library">Library </div>
+                    <div class="features" id="favourites"><a href="#">Favourites</a></div>
+                    <div class="features" id="popular"><a href="#">Popular</a></div>
                 </div>
             </div>
-            <div class="songPlayer">
+            <!-- <div class="songPlayer">
                 <div class="playingAnimation">
                     <div class="currtime">1:00</div>
                     <div class="animation"></div>
-                    <div class="totaltime">2:00</div>
+                    <div id="totaltime"></div>
                 </div>
                 <div class="player">
-                    <div class="songName">Two Tone</div>
-                    <div class="singerName">Talha Anjum</div>
+                    <div class="songName"></div>
+                    <div class="singerName"></div>
                     <div class="icons">
-                       <button class="prevButton"> <img src="icons8-arrow-32.png" alt="Prev" id="prev" > </button>
-                       <button class = playButton> <img src="icons8-play-48 (2).png" alt="Play" id="play"> </button>
+                        <button class="prevButton"> <img src="icons8-arrow-32.png" alt="Prev" id="prev"> </button>
+                        <button class=" playButton"> <img src="icons8-play-48 (2).png" alt="Play" id="play"> </button>
                         <button class="nextButton"><img src="icons8-next-30.png" alt="Next" id="next"></button>
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
         <div class="content-container">
             <div class="nav-bar">
-               <div class="ListenUp"> <h2>ListenUp</h2> </div>
-               <div class="searchBar">  <div class="nest-searchBar">
-                <img src="search-interface-symbol.png" alt="" class="icons search">
-                <input type="text" placeholder="Type here to Search"></div></div>
+                <div class="ListenUp">
+                    <h2>ListenUp</h2>
+                </div>
+                <div class="searchBar">
+                    <div class="nest-searchBar">
+                       <button onclick="getValue()" id="searchButton"><img src="search-interface-symbol.png" alt="" class="icons search" > </button> 
+                        <input type="text" placeholder="Type here to Search" id="input">
+                    </div>
+                </div>
             </div>
-           <div class="main-content">
-            <div class="variable-content">
-                <div class="song-container">
+            <div class="main-content">
+                <div id="variable-content">
                     
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage1"></div> <div class="songName" "><span id="songTitle1"></span></div></div>
-                    <div class="songDuration" ><span id="songDuration1"></span></div>
-                </div>
-                
-                
-                </div>
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage2"></div> <div class="songName" "><span id="songTitle2"></span></div></div>
-                    <div class="songDuration"><span id="songDuration2"></span></div>
-                </div>
-                
-                
-                </div>
 
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage3"></div> <div class="songName" "><span id="songTitle3"></span></div></div>
-                    <div class="songDuration"><span id="songDuration3"></span></div>
+                </div> 
                 </div>
-                
-                
-                </div>
+                <div class="fixed-content">
 
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage4"></div> <div class="songName" "><span id="songTitle4"></span></div></div>
-                    <div class="songDuration"><span id="songDuration4"></span></div>
                 </div>
-                
-                
-                </div>
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage5"></div> <div class="songName" "><span id="songTitle5"></span></div></div>
-                    <div class="songDuration"><span id="songDuration5"></span></div>
-                </div>
-                
-                
-                </div>
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage6"></div> <div class="songName" "><span id="songTitle6"></span></div></div>
-                    <div class="songDuration"><span id="songDuration6"></span></div>
-                </div>
-                
-                
-                </div>
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage7"></div> <div class="songName" "><span id="songTitle7"></span></div></div>
-                    <div class="songDuration"><span id="songDuration7"></span></div>
-                </div>
-                
-                
-                </div>
-                <div class="song-container">
-                    
-                    <div class="songContent">
-                    <div class="songNameContainer">
-                        <div class="songImage"><img src="" alt="s1" id="songImage8"></div> <div class="songName" "><span id="songTitle8"></span></div></div>
-                    <div class="songDuration"><span id="songDuration8"></span></div>
-                </div>
-                
-                
-                </div>
-               
-
             </div>
-            <div class="fixed-content">
-                
-            </div>
-           </div>
         </div>
-        
+
     </div>
+    <script src="functions.js"></script>
     <script src="script.js"></script>
+   
 </body>
 
 </html>
