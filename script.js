@@ -7,6 +7,7 @@ const options = {
 	}
 };
 
+	var curaud = new Audio();
 	let currSong = 0;
 	let playing = false;
 	let songIndex =-1;
@@ -37,7 +38,7 @@ const options = {
 			buttonelem.id = `playButton${i+1}`;
 			imageDiv.appendChild(buttonelem);
 			var imag = document.createElement('img');
-			imag.src = 'icons8-play-48 (2).png';
+			imag.src = 'Images/icons8-play-48 (2).png';
 			imag.alt = 'play';
 			buttonelem.appendChild(imag);
 
@@ -146,7 +147,7 @@ const options = {
 		var prevButton = document.createElement('button');
 		prevButton.classList.add('prevButton');
 		var prevButtonImage = document.createElement('img');
-		prevButtonImage.setAttribute('src', 'icons8-arrow-32.png');
+		prevButtonImage.setAttribute('src', 'Images/icons8-arrow-32.png');
 		prevButtonImage.setAttribute('alt', 'Prev');
 		prevButtonImage.setAttribute('id', 'prev');
 		prevButton.appendChild(prevButtonImage);
@@ -156,7 +157,7 @@ const options = {
 		var playButton = document.createElement('button');
 		playButton.classList.add('playButton');
 		var playButtonImage = document.createElement('img');
-		playButtonImage.setAttribute('src', 'icons8-play-48 (2).png');
+		playButtonImage.setAttribute('src', 'Images/icons8-play-48 (2).png');
 		playButtonImage.setAttribute('alt', 'Play');
 		playButtonImage.setAttribute('id', 'play');
 		playButton.appendChild(playButtonImage);
@@ -166,7 +167,7 @@ const options = {
 		var nextButton = document.createElement('button');
 		nextButton.classList.add('nextButton');
 		var nextButtonImage = document.createElement('img');
-		nextButtonImage.setAttribute('src', 'icons8-next-30.png');
+		nextButtonImage.setAttribute('src', 'Images/icons8-next-30.png');
 		nextButtonImage.setAttribute('alt', 'Next');
 		nextButtonImage.setAttribute('id', 'next');
 		nextButton.appendChild(nextButtonImage);
@@ -199,7 +200,7 @@ const options = {
 			
 		
 			var audio = new Audio();
-
+			
 			var playButton = document.getElementById(`playButton${index+1}`);
 			playButton.addEventListener("click",  function() {
 				
@@ -209,7 +210,7 @@ const options = {
 			
 
 				let player = document.getElementsByClassName("songPlayer");
-				if(player[0].style.display="none"){
+				if(player[0].style.display="none" && window.matchMedia("(min-width: 751px)").matches){
 					player[0].style.display="block";
 				}
 				if(playing===false){
@@ -252,9 +253,9 @@ const options = {
 		function pauseSong(id){
 			let button = document.getElementById(`playButton${songIndex}`);
 			let imageElement =button.querySelector('img');
-			imageElement.src = "icons8-play-48 (2).png";
+			imageElement.src = "Images/icons8-play-48 (2).png";
 
-			playButtonmain[0].querySelector('img').src= "icons8-play-48 (2).png";
+			playButtonmain[0].querySelector('img').src= "Images/icons8-play-48 (2).png";
 
 			playing=false;
 			// songIndex=-1;
@@ -264,9 +265,9 @@ const options = {
 		 function playSong(index){
 			let button = document.getElementById(`playButton${index}`);
 			let imageElement =button.querySelector('img');
-			imageElement.src = "icons8-pause-48.png";
+			imageElement.src = "Images/icons8-pause-48.png";
 			
-			playButtonmain[0].querySelector('img').src= "icons8-pause-48.png";
+			playButtonmain[0].querySelector('img').src= "Images/icons8-pause-48.png";
 
 			let playerName= document.getElementsByClassName("songName");
 			playerName[0].innerHTML = response.data[index-1].title;
@@ -291,7 +292,7 @@ const options = {
 			 }
 
 			 //playing the song
-			 
+			 curaud = audio;
 			 audio.play()
 			 console.log(`playing the song with id ${response.data[index].artist.name}`)
 			

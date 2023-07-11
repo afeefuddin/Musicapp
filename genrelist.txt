@@ -1,0 +1,14 @@
+Id    value
+132   pop
+116   Rap/hiphop
+152   rock
+113   Dance
+165   RandB
+106   Electro
+466   Folk
+129   jazz
+98    classical
+16    Asian Music
+81    Indian Music
+https://deezerdevs-deezer.p.rapidapi.com/genre/Id
+

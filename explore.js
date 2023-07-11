@@ -1,0 +1,2 @@
+var explore =["One Direction" , "BTS" ,"Arijit Singh", "Taylor Swift","Talha Anjum","Rahat Fateh Ali khan","BlackPink","Marshmello", 
+"Harry Styles", "Zayn Malik","Ed sheeran", "KK","Atif Aslam","Krsna","Arman Malik", "Raftaar","King","Divine","Drake","Rap Demon"];

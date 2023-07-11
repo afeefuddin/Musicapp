@@ -1,0 +1,111 @@
+@media screen and (max-width:1110px) {
+    .card-img{
+        height: 130px;
+    }
+    .card{
+        max-width: 130px;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:750px){
+    .card-img{
+        height: 110px;
+    }
+    .card{
+        max-width: 110px;
+    }
+
+    .song-container{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .card-img{
+        height: 90px;
+    }
+    .card{
+        max-width: 90px;
+    }
+
+    .nav-bar{
+        margin-right: 10px;
+        
+        
+    }
+    #side-container{
+        position: absolute;
+        background-color: rgba(33,28,63,255);
+        z-index: 200;
+    }
+    #side-container.open{
+        display: none;
+        
+    }
+   
+
+    #toggleButton{
+        display: block;
+        position: relative;
+        overflow: auto;
+        z-index: 300;
+        
+    }
+    .container{
+        grid-template-columns: none;
+    }
+    .song-container{
+        width: 75vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .ListenUp h2{
+        font-size: 20px;
+    }
+    input{
+        width: 100px;
+      
+    }
+    #searchButton{
+        display: none;
+    }
+    .song-container{
+        margin:20px;
+    }
+    .songName{
+        font-size: 15px;
+    }
+    .artistName{
+        font-size: 10px;
+    }
+    button{
+        width: 20px;
+        height: 20px;
+    }
+    .songImage img{
+        height: 11px;
+    }
+    .songDuration{
+        font-size: 13px;
+    }
+    .nav-bar{
+        margin-left: 10px;
+    }
+
+    .card-img{
+        height: 78px;
+    }
+    .card{
+        max-width: 78px;
+        margin: 5px
+    }
+
+}
+@media screen and (max-width:300px) {
+    .warning{
+        display: block;
+    }
+    .container{
+        display: none;
+    }
+}

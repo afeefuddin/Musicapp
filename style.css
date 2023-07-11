@@ -14,6 +14,9 @@ a{
 a:hover{
     color: #fcfbfd;
 }
+.warning{
+    display: none;
+}
 .container{
     margin: 0px;
     background-color: rgba(33,28,63,255);
@@ -158,6 +161,13 @@ button{
     font-family: Roboto;
     display: flex;
     justify-content: space-between;
+}
+#toggleButton{
+    display: none;
+    
+}
+#toggleButton img{
+    height: 20px;
 }
 .searchBar{
     display: block;

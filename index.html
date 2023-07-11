@@ -6,33 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ListenUp</title>
+   
+  
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="genres.css">
+    <link rel="stylesheet" href="smallerview.css">
+    
+    
 </head>
 
 <body>
+    <div class="warning">Please use a wider screen</div>
     <div class="container">
-        <div id="side-container">
+        
+        <div id="side-container" class="open">
             <div class="profile">
-                <div class="pfp"> <img src="profile-image.jpg" alt="Afeef" id="profile-image"></div>
+                <div class="pfp"> <img src="Images/profile-image.jpg" alt="Afeef" id="profile-image"></div>
                 <div class="wish">Hi!</div>
                 <div class="profile-name">Afeefuddin</div>
             </div>
             <div class="widgets">
                 <div class="upperWidgets">
                     <div class="heading menu">Menu</div>
-                    <div class="features" id="explore"><a href="#">Explore</a></div>
+                    <div class="features" id="explore"><a>Explore</a></div>
                     <div class="features" id="generes"><a>Generes</a></div>
-                    <div class="features" id="albums"><a>Albums</a></div>
-                    <div class="features" id="artists"><a>Artists</a></div>
+                    <!-- <div class="features" id="albums"><a>Albums</a></div>
+                    <div class="features" id="artists"><a>Artists</a></div> -->
                 </div>
-                <div class="lowerWidgets">
+                <!-- <div class="lowerWidgets">
                     <div class="heading Library">Library </div>
                     <div class="features" id="favourites"><a href="#">Favourites</a></div>
-                    <div class="features" id="popular"><a href="#">Popular</a></div>
-                </div>
+                    <div class="features" id="popular"><a href="#">Popular</a></div> -->
+                <!-- </div> -->
             </div>
             <!-- <div class="songPlayer">
                 <div class="playingAnimation">
@@ -52,17 +61,21 @@
 
             </div> -->
         </div>
+        
         <div class="content-container">
+            
             <div class="nav-bar">
+                
                 <div class="ListenUp">
                     <h2>ListenUp</h2>
                 </div>
                 <div class="searchBar">
                     <div class="nest-searchBar">
-                       <button onclick="getValue()" id="searchButton"><img src="search-interface-symbol.png" alt="" class="icons search" > </button> 
-                        <input type="text" placeholder="Type here to Search" id="input">
+                       <button id="searchButton"><img src="Images/search-interface-symbol.png" alt="" class="icons search" > </button> 
+                        <input type="text" placeholder="Search" id="input">
                     </div>
                 </div>
+                <div id="toggleButton"><img src="Images/togglebutton.png" alt=""></div>
             </div>
             <div class="main-content">
                 <div id="variable-content">
@@ -77,8 +90,12 @@
         </div>
 
     </div>
+    
+    <script src="genres.js"></script>
+    <script src="explore.js"></script>
     <script src="functions.js"></script>
     <script src="script.js"></script>
+   
    
 </body>
 
